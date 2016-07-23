@@ -1,1 +1,4 @@
-console.log('ffs');
+// initialise fullPageJS
+$(document).ready(function() {
+    $('#container').fullpage();
+});
