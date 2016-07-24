@@ -8,6 +8,7 @@ h1 {
     content: "Safer Nudes";
     color: $primary-rgba;
     position: absolute;
+    mix-blend-mode:multiply;
     top:-10px;
     left:5px;
   }
