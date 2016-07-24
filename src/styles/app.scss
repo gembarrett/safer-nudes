@@ -14,3 +14,21 @@ html {
 img {
   display:inline-block;
 }
+
+.container {
+  max-width: 960px;
+  margin:0 auto;
+  padding:1em;
+}
+
+.orange {
+  background-color: $primary;
+  color:white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.twin {
+  width:45%;
+  display:inline-block;
+}

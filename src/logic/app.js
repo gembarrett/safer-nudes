@@ -1,4 +1,4 @@
 // initialise fullPageJS
 $(document).ready(function() {
-    $('#container').fullpage();
+    $('#wrapper').fullpage();
 });
