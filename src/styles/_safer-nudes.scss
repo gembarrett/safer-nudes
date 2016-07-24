@@ -1,16 +1,19 @@
 h1 {
   text-transform: uppercase;
   color: $secondary-rgba;
-  font-size: 5em;
-  display:inline;
+  font-size: 7em;
+  display:inline-block;
   position: relative;
+  font-weight: bolder;
+  font-style: italic;
+  letter-spacing: -3px;
   &:after {
     content: "Safer Nudes";
     color: $primary-rgba;
     position: absolute;
     mix-blend-mode:multiply;
-    top:-10px;
-    left:5px;
+    top:4px;
+    left:8px;
   }
 }
 
