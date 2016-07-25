@@ -1,0 +1,6 @@
+#phone-buzzes {
+  @media(max-width: $small) {
+    border: $primary solid 1.5rem;
+    box-sizing: border-box;
+  }
+}

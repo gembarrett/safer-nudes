@@ -55,6 +55,9 @@ h2 {
     }
   }
   @media (min-width:$medium) {
+    img {
+      margin-bottom: 1.5rem;
+    }
     #anaglyphic {
       float:left;
       h1 {
