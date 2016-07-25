@@ -1,17 +1,22 @@
 // initialise fullPageJS
 $(document).ready(function() {
     $('#wrapper').fullpage({
-      onLeave: function(index, nextIndex, direction){
-        var leavingSection = $(this);
-        //after leaving section 2
-        if((index == 1 && direction =='down') || (index == 3 && direction == 'up')){
-          // check if vibrate and on small screen size
+      afterLoad: function(index) {
+        var loadedSection = $(this);
+        index = loadedSection.index();
+        var phone = document.getElementById('phone-buzz');
+        if (index == 1) {
           if((Modernizr.vibrate)&&(window.width < 500)) {
-            console.log('yay');
             window.navigator.vibrate([200, 100, 200]);
           } else {
-            console.log('boo');
+            phone.style.webkitAnimationPlayState = "running";
+            phone.style.MozAnimationPlayState = "running";
+            console.log(phone.style.MozAnimationPlayState);
           }
+        } else {
+          phone.style.webkitAnimationPlayState = "paused";
+          phone.style.MozAnimationPlayState = "paused";
+          console.log(phone.style.MozAnimationPlayState);
         }
       }
     });
