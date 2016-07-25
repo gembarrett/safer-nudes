@@ -22,11 +22,22 @@ html {
   p, h1, h2, h3, h4, h5, h6 {
     color:white;
     text-align: center;
-    text-transform: uppercase;    
+    text-transform: uppercase;
   }
 }
 
 .twin {
   width:45%;
   display:inline-block;
+}
+
+desktop {
+  @media(max-width: $small) {
+    display:none;
+  }
+}
+mobile {
+  @media(min-width: $small) {
+    display:none;
+  }
 }

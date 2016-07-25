@@ -10,7 +10,7 @@ iPhone CSS
 https://github.com/andrewgomez/iPhone-CSS
 ******************************************************************/
 .iphone {
-  font-size: 0.25rem; /* edit this to change the size of the iPhone */
+  font-size: 0.3rem; /* edit this to change the size of the iPhone */
 
   position: relative;
   background: -webkit-linear-gradient(left, #8e8e8e 0%, #f2f2f2 8%, #c1c1c1 15%, #8e8e8e 50%, #c1c1c1 85%, #f2f2f2 92%, #8e8e8e 100%);
@@ -21,9 +21,14 @@ https://github.com/andrewgomez/iPhone-CSS
   border-radius: 6em;
   z-index: 1;
   text-align: initial;
-}
-
-  .iphone:after {
+  animation:vibrate 0.1s linear 0s 100s;
+  -moz-animation: vibrate 0.1s linear 0s 100s;
+  /* Firefox */
+  -webkit-animation: vibrate 0.1s linear 0s 100s;
+  /* Safari and Chrome */
+  -o-animation: vibrate 0.1s linear 0s 100s;
+  /* Opera */
+  &:after {
     content: '';
     position: absolute;
     background-color: #0e0e0e;
@@ -37,8 +42,7 @@ https://github.com/andrewgomez/iPhone-CSS
     box-shadow: 0em .5em .5em rgba(255,255,255,.25);
     z-index: 3;
   }
-
-  .orange div:first-child {
+  &.orange div:first-child {
     position: absolute;
     bottom: 5em;
     left: 24.5em;
@@ -49,8 +53,8 @@ https://github.com/andrewgomez/iPhone-CSS
     box-shadow: inset 0em .5em 1.5em rgba(0,0,0,.1);
     z-index: 4;
   }
-
-    .iphone div:first-child:before {
+  div:first-child{
+    &:before {
       content: '';
       position: absolute;
       top: -90em;
@@ -62,8 +66,7 @@ https://github.com/andrewgomez/iPhone-CSS
                   0em .5em .5em rgba(255,255,255,1);
       z-index: 4;
     }
-
-    .iphone div:first-child:after {
+    &:after {
       content: '';
       position: absolute;
       top: 4em;
@@ -74,8 +77,8 @@ https://github.com/andrewgomez/iPhone-CSS
       border: solid #a3a3a3 .5em;
       z-index: 5;
     }
-
-  .iphone div:last-child {
+  }
+  div:last-child {
     position: absolute;
     top: 9.5em;
     left: -.5em;
@@ -85,9 +88,7 @@ https://github.com/andrewgomez/iPhone-CSS
     background: -webkit-linear-gradient(#8e8e8e 0%, #f2f2f2 8%, #c1c1c1 15%, #8e8e8e 50%, #c1c1c1 85%, #f2f2f2 92%, #8e8e8e 100%);
     box-shadow: -.5em .5em 1.5em rgba(0,0,0,.45);
     z-index: 0;
-  }
-
-    .iphone div:last-child:before {
+    &:before {
       content: '';
       position: absolute;
       top: 12.5em;
@@ -99,8 +100,7 @@ https://github.com/andrewgomez/iPhone-CSS
       box-shadow: -.5em .5em 1.5em rgba(0,0,0,.45);
       z-index: 0;
     }
-
-    .iphone div:last-child:after {
+    &:after {
       content: '';
       position: absolute;
       top: 23em;
@@ -111,4 +111,81 @@ https://github.com/andrewgomez/iPhone-CSS
       background: -webkit-linear-gradient(#8e8e8e 0%, #f2f2f2 8%, #4b4b4b 60%, #4b4b4b 85%, #f2f2f2 92%, #8e8e8e 100%);
       box-shadow: -.5em .5em 1.5em rgba(0,0,0,.45);
       z-index: 0;
+    }
+  }
+}
+
+@keyframes vibrate {
+    0% {
+        padding-top: 0px;
+    }
+    25% {
+        padding-top: -3px;
+    }
+    50% {
+        padding-top: 0px;
+    }
+    75% {
+        padding-top: 3px;
+    }
+    100% {
+        padding-top: 0px;
+    }
+}
+@-moz-keyframes vibrate
+/* Firefox */
+ {
+    0% {
+        padding-top: 0px;
+    }
+    25% {
+        padding-top: -3px;
+    }
+    50% {
+        padding-top: 0px;
+    }
+    75% {
+        padding-top: 3px;
+    }
+    100% {
+        padding-top: 0px;
+    }
+}
+@-webkit-keyframes vibrate
+/* Safari and Chrome */
+ {
+    0% {
+        padding-top: 0px;
+    }
+    25% {
+        padding-top: -3px;
+    }
+    50% {
+        padding-top: 0px;
+    }
+    75% {
+        padding-top: 3px;
+    }
+    100% {
+        padding-top: 0px;
+    }
+}
+@-o-keyframes vibrate
+/* Opera */
+ {
+    0% {
+        padding-top: 0px;
+    }
+    25% {
+        padding-top: -3px;
+    }
+    50% {
+        padding-top: 0px;
+    }
+    75% {
+        padding-top: 3px;
+    }
+    100% {
+        padding-top: 0px;
+    }
 }
