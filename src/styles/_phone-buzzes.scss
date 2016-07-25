@@ -3,6 +3,22 @@
     border: $primary solid 1.5rem;
     box-sizing: border-box;
   }
+  #phone-text {
+    z-index: 4;
+    position: absolute;
+    width:52em;
+    height: 78em;
+    top:16em;
+    left:3.5em;
+    p {
+      color:#000;
+      font-size: 1rem;
+      // find a better way to verically align this
+      padding: 35% 1.55rem;
+      font-style:italic;
+      text-align: left;
+    }
+  }
 }
 
 /******************************************************************
@@ -11,7 +27,8 @@ https://github.com/andrewgomez/iPhone-CSS
 ******************************************************************/
 .iphone {
   font-size: 0.3rem; /* edit this to change the size of the iPhone */
-
+  display:block;
+  margin:0 auto;
   position: relative;
   background: -webkit-linear-gradient(left, #8e8e8e 0%, #f2f2f2 8%, #c1c1c1 15%, #8e8e8e 50%, #c1c1c1 85%, #f2f2f2 92%, #8e8e8e 100%);
   box-shadow: inset 0em .5em 0em rgba(255,255,255,.5),
@@ -21,18 +38,18 @@ https://github.com/andrewgomez/iPhone-CSS
   border-radius: 6em;
   z-index: 1;
   text-align: initial;
-  animation:vibrate 0.1s linear 0s 100s;
-  -moz-animation: vibrate 0.1s linear 0s 100s;
+  animation:vibrate 0.15s linear 0s infinite;
+  -moz-animation: vibrate 0.15s linear 0s infinite;
   /* Firefox */
-  -webkit-animation: vibrate 0.1s linear 0s 100s;
+  -webkit-animation: vibrate 0.15s linear 0s infinite;
   /* Safari and Chrome */
-  -o-animation: vibrate 0.1s linear 0s 100s;
+  -o-animation: vibrate 0.15s linear 0s infinite;
   /* Opera */
   &:after {
-    content: '';
+    content:'';
     position: absolute;
-    background-color: #0e0e0e;
-    background-image: -webkit-linear-gradient(-30deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 40%, rgba(255,255,255,0.05) 41%, rgba(255,255,255,0.1) 100%);
+    background-color: #fff;
+    // background-image: -webkit-linear-gradient(-30deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.15) 40%, rgba(255,255,255,0.05) 41%, rgba(255,255,255,0.1) 100%);
     width: 52em;
     height: 78em;
     top: 16em;
@@ -116,76 +133,46 @@ https://github.com/andrewgomez/iPhone-CSS
 }
 
 @keyframes vibrate {
-    0% {
+    0%, 50%, 100% {
         padding-top: 0px;
     }
     25% {
         padding-top: -3px;
     }
-    50% {
-        padding-top: 0px;
-    }
     75% {
         padding-top: 3px;
-    }
-    100% {
-        padding-top: 0px;
     }
 }
-@-moz-keyframes vibrate
-/* Firefox */
- {
-    0% {
+@-moz-keyframes vibrate {
+    0%, 50%, 100% {
         padding-top: 0px;
     }
     25% {
         padding-top: -3px;
     }
-    50% {
-        padding-top: 0px;
-    }
     75% {
         padding-top: 3px;
-    }
-    100% {
-        padding-top: 0px;
     }
 }
-@-webkit-keyframes vibrate
-/* Safari and Chrome */
- {
-    0% {
+@-webkit-keyframes vibrate {
+    0%, 50%, 100% {
         padding-top: 0px;
     }
     25% {
         padding-top: -3px;
     }
-    50% {
-        padding-top: 0px;
-    }
     75% {
         padding-top: 3px;
-    }
-    100% {
-        padding-top: 0px;
     }
 }
-@-o-keyframes vibrate
-/* Opera */
- {
-    0% {
+@-o-keyframes vibrate {
+    0%, 50%, 100% {
         padding-top: 0px;
     }
     25% {
         padding-top: -3px;
     }
-    50% {
-        padding-top: 0px;
-    }
     75% {
         padding-top: 3px;
-    }
-    100% {
-        padding-top: 0px;
     }
 }
