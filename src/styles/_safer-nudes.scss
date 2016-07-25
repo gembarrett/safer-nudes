@@ -1,48 +1,69 @@
 h1 {
   text-transform: uppercase;
   color: $secondary-rgba;
-  font-size: 7em;
   display:inline-block;
   position: relative;
   font-weight: bolder;
   font-style: italic;
   letter-spacing: -3px;
-  line-height: 1em;
   &:after {
     content: "Safer Nudes";
     color: $primary-rgba;
     position: absolute;
     mix-blend-mode:multiply;
-    top:4px;
-    left:8px;
+    top:0.25rem;
   }
 }
 
 h2 {
   text-align: center;
   text-transform: uppercase;
-  padding: 1em 0;
+  margin:0;
 }
 
 #safer-nudes {
-  p {
-    text-align: right;
-    font-size: 0.8em;
-  }
-  img {
-    float:right;
-  }
+  text-align: center;
   .orange {
     color:white;
     width:100%;
   }
   @media(max-width:$small) {
     img {
-      width:100%;
-      float:none;
+      width:80%;
     }
+    h2 {
+      font-size: 1rem;
+    }
+    #anaglyphic {
+      display: inline-block;
+    }
+  }
+  @media(min-width:$small){
+    img, #anaglyphic {
+      width:50%;
+      display:inline-block;
+    }
+  }
+  @media(max-width:$medium) {
     h1 {
-      font-size: 4em;
+      font-size: 4rem;
+      margin:0.5rem;
+      line-height: 4rem;
+      &:after {
+        left:0.35rem;
+      }
+    }
+  }
+  @media (min-width:$medium) {
+    #anaglyphic {
+      float:left;
+      h1 {
+        font-size: 7rem;
+        line-height: 7rem;
+        &:after {
+          left:0.6rem;
+        }
+      }
     }
   }
 }
