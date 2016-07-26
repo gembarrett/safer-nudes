@@ -9,6 +9,12 @@
     text-align: left;
   }
   #phone-text {
+    background: repeating-linear-gradient(
+      -45deg,
+      white,
+      white 20px,
+      lightgray 22px
+    );
     z-index: 4;
     position: absolute;
     width:52em;
