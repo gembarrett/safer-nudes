@@ -45,13 +45,13 @@ https://github.com/andrewgomez/iPhone-CSS
   border-radius: 6em;
   z-index: 1;
   text-align: initial;
-  animation:vibrate 0.15s linear 0s infinite;
-  -moz-animation: vibrate 0.15s linear 0s infinite;
+  animation:vibrate 2.5s linear 0s 3;
+  -moz-animation: vibrate 2.5s linear 0s 3;
   /* Firefox */
-  -webkit-animation: vibrate 0.15s linear 0s infinite;
-  /* Safari and Chrome */
-  -o-animation: vibrate 0.15s linear 0s infinite;
-  /* Opera */
+  // -webkit-animation: vibrate 0.15s linear 0s 3;
+  // /* Safari and Chrome */
+  // -o-animation: vibrate 0.15s linear 0s 3;
+  // /* Opera */
   &:after {
     content:'';
     position: absolute;
@@ -140,46 +140,46 @@ https://github.com/andrewgomez/iPhone-CSS
 }
 
 @keyframes vibrate {
-    0%, 50%, 100% {
-        padding-top: 0px;
+    0%, 2%, 4%, 6%, 8% {
+      transform: translate(0,0);
     }
-    25% {
-        padding-top: -3px;
+    1%, 5% {
+      transform: translate(-7px,0);
     }
-    75% {
-        padding-top: 3px;
+    3%, 7% {
+      transform: translate(7px,0);
     }
 }
 @-moz-keyframes vibrate {
-    0%, 50%, 100% {
-        padding-top: 0px;
-    }
-    25% {
-        padding-top: -3px;
-    }
-    75% {
-        padding-top: 3px;
-    }
+  0%, 2%, 4%, 6%, 8% {
+    transform: translate(0,0);
+  }
+  1%, 5% {
+    transform: translate(-7px,0);
+  }
+  3%, 7% {
+    transform: translate(7px,0);
+  }
 }
-@-webkit-keyframes vibrate {
-    0%, 50%, 100% {
-        padding-top: 0px;
-    }
-    25% {
-        padding-top: -3px;
-    }
-    75% {
-        padding-top: 3px;
-    }
-}
-@-o-keyframes vibrate {
-    0%, 50%, 100% {
-        padding-top: 0px;
-    }
-    25% {
-        padding-top: -3px;
-    }
-    75% {
-        padding-top: 3px;
-    }
-}
+// @-webkit-keyframes vibrate {
+//     0%, 50%, 100% {
+//         padding-top: 0px;
+//     }
+//     25% {
+//         padding-top: -3px;
+//     }
+//     75% {
+//         padding-top: 3px;
+//     }
+// }
+// @-o-keyframes vibrate {
+//     0%, 50%, 100% {
+//         padding-top: 0px;
+//     }
+//     25% {
+//         padding-top: -3px;
+//     }
+//     75% {
+//         padding-top: 3px;
+//     }
+// }
