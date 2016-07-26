@@ -1,0 +1,69 @@
+#send-nudes {
+    // animation:scroll 2.5s linear 0s infinite;
+    /* Firefox */
+    // -webkit-animation: scroll 2.5s linear 0s infinite;
+    // // /* Safari and Chrome */
+    // -o-animation: scroll 2.5s linear 0s infinite;
+    // // /* Opera */
+  .text-area {
+    overflow:hidden;
+    .twin {
+      margin-top:-50%;
+    }
+    div:first-child > p {
+      color: $primary;
+    }
+    div:last-child > p {
+      color: $secondary;
+    }
+    p {
+      font-size: 1.8rem;
+      text-align: left;
+      font-style: italic;
+      font-weight: bolder;
+      margin: 5px 10px;
+      line-height: 2rem;
+      animation:scroll 1.5s cubic-bezier(.25,.46,.45,.94) 0s infinite;
+      -moz-animation: scroll 1.5s cubic-bezier(.25,.46,.45,.94) 0s infinite;
+      /* Firefox */
+      -webkit-animation: scroll 1.5s cubic-bezier(.25,.46,.45,.94) 0s infinite;
+      // /* Safari and Chrome */
+      -o-animation: scroll 1.5s cubic-bezier(.25,.46,.45,.94) 0s infinite;
+      // /* Opera */
+    }
+  }
+
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}
+@-moz-keyframes scroll {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}
+@-webkit-keyframes scroll {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}
+@-o-keyframes scroll {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(200%);
+  }
+}

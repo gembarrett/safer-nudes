@@ -31,6 +31,15 @@ html {
   display:inline-block;
 }
 
+.text-area {
+  z-index: 4;
+  position: absolute;
+  width:52em;
+  height: 77em;
+  top:17em;
+  left:3.5em;
+}
+
 desktop {
   @media(max-width: $small) {
     display:none;
