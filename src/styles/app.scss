@@ -22,7 +22,14 @@ html {
     color:white;
     text-align: center;
     text-transform: uppercase;
+    font-weight: bolder;
   }
+}
+
+.blue {
+  color: $secondary;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .twin {
@@ -57,7 +64,32 @@ mobile {
 }
 
 .mobile-full {
-  @media(max-width: $small) {
+  @media(max-width: $medium) {
     width:auto;
+  }
+}
+
+.flex {
+  &.container {
+    height:100%;
+  }
+  &.reverse {
+    @media(max-width: $medium) {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.section {
+  overflow:hidden;
+}
+
+.v-centre {
+  display:table;
+  height: 100%;
+  > p, > h3 {
+    display:table-cell;
+    vertical-align: middle;
   }
 }
