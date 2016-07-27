@@ -5,10 +5,6 @@
   .container, .text-area {
     overflow:hidden;
   }
-  .twin {
-    margin-top:-50%;
-    height: 100%;
-  }
   div:first-child > p {
     color: $primary;
   }
@@ -33,6 +29,9 @@
     // /* Safari and Chrome */
     -o-animation: scroll 1.5s linear 0s infinite;
     // /* Opera */
+    &:first-child {
+      margin-top:-100%;
+    }
   }
 }
 

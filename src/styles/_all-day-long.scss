@@ -2,9 +2,14 @@
   h3 {
     display: inline-block;
   }
-  .orange {
-    margin-right:10%;
-    display:inline-block;
-    height:100%;
+}
+
+.flex {
+  height:100%;
+  &.reverse {
+    @media(max-width: $small) {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+    }
   }
 }
