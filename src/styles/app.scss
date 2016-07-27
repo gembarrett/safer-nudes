@@ -35,6 +35,7 @@ html {
 .twin {
   width:50%;
   margin:0;
+  text-align: center;
 }
 
 .text-area {
@@ -89,7 +90,12 @@ mobile {
   display:table;
   height: 100%;
   > p, > h3 {
-    display:table-cell;
-    vertical-align: middle;
+    @media(min-width: $medium){
+      display:table-cell;
+      vertical-align: middle;
+    }
+  }
+  @media(max-width:$medium) {
+    display:inline-block;
   }
 }

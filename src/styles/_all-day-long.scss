@@ -2,21 +2,42 @@
   .blue {
     background-image: url('../images/all-day-long.png');
     background-size:cover;
+    @media (min-width:$small) and (max-width:$medium){
+      background-size: initial;
+    }
     background-repeat: no-repeat;
     background-position: center;
   }
   h3 {
     font-style: italic;
     font-size: 5rem;
+    @media(max-width: $medium) {
+      font-size:4rem;
+    }
+    @media(max-width: $small) {
+      font-size:3.5rem;
+    }
     text-align: left;
     padding: 0 3rem;
     opacity: 0.75;
   }
   p {
-    font-size: 3rem;
     padding:0 3rem;
+    font-size: 3rem;
+    @media(max-width:$medium){
+      font-size: 1.5rem;
+    }
+    @media(max-width: $small) {
+      font-size:1.35rem;
+      padding: 0 1rem;
+    }
   }
-  // img {
-  //   width:100%;
-  // }
+  .flex .twin {
+    &:first-child {
+      flex-grow: 1;
+    }
+    &:last-child {
+      flex-grow: 0;
+    }
+  }
 }
