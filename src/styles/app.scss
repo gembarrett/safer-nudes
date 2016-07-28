@@ -100,9 +100,16 @@ mobile {
   }
 }
 
-.primary {
+o,d,bl {
+  display:block;
+}
+
+o {
   color:$primary;
 }
-.secondary {
+d {
+  color:black;
+}
+bl {
   color:$secondary;
 }

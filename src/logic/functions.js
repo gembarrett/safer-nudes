@@ -17,7 +17,6 @@ function action(start, pause, pause2, pause3) {
 }
 
 function animatePhones(index) {
-
   // grab the animations
   phone = document.getElementById('phone-buzz');
   phone2 = document.getElementById('phone-scroll');
@@ -55,6 +54,12 @@ function animatePhones(index) {
   }
 }
 
-function censor() {
+function animateCensor() {
+  var rand = randomIntFromInterval(0,arr.length);
+  console.log(arr[rand]);
+  // .addClass('censor');
+}
 
+function randomIntFromInterval(min,max) {
+  return Math.floor(Math.random()*(max-min+1)+min);
 }
