@@ -1,6 +1,6 @@
 var phone, phone2, phone3;
 var arr =[];
-var letters;
+var letters, rand, el;
 
 // initialise fullPageJS
 $(document).ready(function() {

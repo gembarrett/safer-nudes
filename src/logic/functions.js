@@ -55,9 +55,12 @@ function animatePhones(index) {
 }
 
 function animateCensor() {
-  var rand = randomIntFromInterval(0,arr.length);
-  console.log(arr[rand]);
-  // .addClass('censor');
+  // TODO: 0 doesn't seem to ever get chosen, look into this
+  rand = randomIntFromInterval(0,arr.length-1);
+  el = arr[rand];
+  console.log(arr.length, rand);
+  // el.setAttribute("class", "censor");
+  $(el).toggleClass("censor");
 }
 
 function randomIntFromInterval(min,max) {
