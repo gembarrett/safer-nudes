@@ -1,0 +1,18 @@
+#privacy-right {
+  section {
+    background-image: url('../images/privacy-right.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+    display:table;
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-style: italic;
+      display:table-cell;
+      vertical-align: middle;
+      font-size:2rem;
+    }
+  }
+}
