@@ -80,6 +80,12 @@ mobile {
       justify-content: flex-end;
     }
   }
+  &.forward {
+    @media(max-width: $medium) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
 }
 
 .section {

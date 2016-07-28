@@ -1,0 +1,22 @@
+#with-that-in-mind {
+  h3 {
+    font-style: italic;
+    text-align: left;
+    padding: 0 3rem;
+    font-size: 2rem;
+  }
+  .blue {
+    background-image: url('../images/with-that-in-mind.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  desktop {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  p:last-child {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+}

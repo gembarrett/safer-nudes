@@ -55,11 +55,9 @@ function animatePhones(index) {
 }
 
 function animateCensor() {
-  // TODO: 0 doesn't seem to ever get chosen, look into this
-  rand = randomIntFromInterval(0,arr.length-1);
+  // TODO: do the following every few seconds while in view
+  rand = randomIntFromInterval(-1,arr.length-1);
   el = arr[rand];
-  console.log(arr.length, rand);
-  // el.setAttribute("class", "censor");
   $(el).toggleClass("censor");
 }
 
