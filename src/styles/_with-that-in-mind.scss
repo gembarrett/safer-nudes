@@ -2,18 +2,14 @@
   h3 {
     text-align: left;
     padding: 0 3rem;
-    font-size: 2rem;
-    text-shadow: 0px 0px 10px white;
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.5);
   }
   .blue {
     background-image: url('../images/with-that-in-mind.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-  }
-  desktop {
-    display: table-cell;
-    vertical-align: middle;
   }
   h4 {
     font-weight: bolder;
@@ -32,6 +28,12 @@
     span {
       display:block;
       font-weight: bold;
+    }
+  }
+  @media(min-width:$small) {
+    desktop {
+      display: table-cell;
+      vertical-align: middle;
     }
   }
 }
