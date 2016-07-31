@@ -1,6 +1,5 @@
 #with-that-in-mind {
   h3 {
-    font-style: italic;
     text-align: left;
     padding: 0 3rem;
     font-size: 2rem;
@@ -16,8 +15,23 @@
     display: table-cell;
     vertical-align: middle;
   }
-  p:last-child {
+  h4 {
+    font-weight: bolder;
+    font-size: 2.7rem;
+    color: $primary;
+    margin:0;
+  }
+  h3, o, bl, h4 {
+    text-align:left;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  o, bl {
+    font-weight: lighter;
     font-size: 2rem;
-    padding: 0 1rem;
+    span {
+      display:block;
+      font-weight: bold;
+    }
   }
 }
