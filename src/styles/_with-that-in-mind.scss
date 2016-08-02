@@ -36,6 +36,11 @@
       vertical-align: middle;
     }
   }
+  @media(min-width:$medium) and (max-width: $large) {
+    .v-centre:last-child {
+      flex-shrink: 2;
+    }
+  }
   @media(max-width:$large) {
     bl, o, h4, bl span, o span {
       display:inline;
@@ -43,8 +48,5 @@
     bl, o {
       font-size:1.5rem;
     }
-  }
-  .v-centre:last-child {
-    flex-shrink: 2;
   }
 }
