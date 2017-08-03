@@ -48,6 +48,7 @@ h2 {
   @media (min-width: 720px) and (max-width:$medium) {
     img, #anaglyphic {
       width:45%;
+      padding-bottom:2rem;
     }
   }
   @media(max-width:$medium) {
