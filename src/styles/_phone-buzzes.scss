@@ -44,7 +44,7 @@ https://github.com/andrewgomez/iPhone-CSS
   display:block;
   margin:0 auto;
   position: relative;
-  background: -webkit-linear-gradient(left, #8e8e8e 0%, #f2f2f2 8%, #c1c1c1 15%, #8e8e8e 50%, #c1c1c1 85%, #f2f2f2 92%, #8e8e8e 100%);
+  // background: -webkit-linear-gradient(left, #8e8e8e 0%, #f2f2f2 8%, #c1c1c1 15%, #8e8e8e 50%, #c1c1c1 85%, #f2f2f2 92%, #8e8e8e 100%);
   box-shadow: inset 0em .5em 0em rgba(255,255,255,.5),
               0em 1em 1em rgba(0,0,0,.45);
   width: 60em;
@@ -73,7 +73,7 @@ https://github.com/andrewgomez/iPhone-CSS
     width: 11em;
     height: 11em;
     border-radius: 5.5em;
-    background: -webkit-linear-gradient(#0e0e0e 0%, #3b3b3b 100%);
+    background: -webkit-linear-gradient(#eee 0%, #fff 100%);
     box-shadow: inset 0em .5em 1.5em rgba(0,0,0,.1);
     z-index: 4;
   }

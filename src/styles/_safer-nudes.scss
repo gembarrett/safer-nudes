@@ -45,6 +45,11 @@ h2 {
       display:inline-block;
     }
   }
+  @media (min-width: 720px) and (max-width:$medium) {
+    img, #anaglyphic {
+      width:45%;
+    }
+  }
   @media(max-width:$medium) {
     h1 {
       font-size: 4rem;
@@ -71,4 +76,3 @@ h2 {
     }
   }
 }
-
